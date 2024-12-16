@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.custom-header {
+  background-color: #ce2829;
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 2rem;
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-space {
+  margin-top: 5rem;
+}
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  margin: 0;
+  background-color: #CE2829;
+  color: white;
+  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage {
+  background: url('./background.png') no-repeat center center;
+  background-size: cover;
+  color: white;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+}
+
+.hero {
+  margin-top: 3rem;
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: clamp(1.25rem, 3vw, 2rem);
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+button {
+  background-color: #FDC913;
+  color: #333;
+  border: none;
+  border-radius: 50px;
+  padding: 0.75rem 2.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.curved-button:hover {
+  background-color: #FAF7F2;
+  transform: translateY(-2px);
+}
+
+.curved-textarea {
+  width: 100%;
+  max-width: 400px;
+  height: 100px;
+  border: 2px solid #FDC913;
+  border-radius: 20px;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  font-family: 'Roboto', Arial, sans-serif;
+  outline: none;
+  resize: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.curved-textarea:focus {
+  border-color: #FAF7F2;
+  background-color: #FFF8DC;
+  transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+  .hero p {
+    font-family: 'Barlow', sans-serif;
+    display: flex;
+    flex-direction: column;
+    font-size: 4.1rem;
+    line-height: 4rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .button {
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 30px;
+    max-width: 100px;
+  }
+}

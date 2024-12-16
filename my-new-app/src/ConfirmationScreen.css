@@ -1,0 +1,50 @@
+.confirmation-screen {
+    background-color: #ce2829;
+    color: white;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+.confirmation-screen h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+}
+
+.confirmation-message h3 {
+    font-size: 2.5rem;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.confirmation-message span {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .confirmation-screen h1 {
+        font-size: 1.6rem;
+        position: relative;
+        bottom: 10rem;
+    }
+
+    .confirmation-message h3 {
+        font-size: 4rem;
+    }
+
+    .large-text {
+         font-family: 'Barlow', sans-serif;
+        font-size: 3.7rem;
+        white-space: pre-wrap;
+        word-break: break-word;
+        text-align: center;
+    }
+}
